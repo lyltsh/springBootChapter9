@@ -18,13 +18,13 @@ import javax.sql.DataSource;
 @Configuration
 @EnableBatchProcessing
 public class MyBatchConfig {
-
-    @Bean
-    public JobRepository jobRepository(DataSource dataSource, PlatformTransactionManager transactionManager) {
-        JobRepositoryFactoryBean jobRepositoryFactoryBean = new JobRepositoryFactoryBean();
-        jobRepositoryFactoryBean.setDataSource(dataSource);
-        jobRepositoryFactoryBean.setTransactionManager(transactionManager);
-        jobRepositoryFactoryBean.setDatabaseType("mysql");
-        return jobRepositoryFactoryBean.getJobRepository();
-    }
+//
+//    @Bean
+//    public JobRepository jobRepository(DataSource dataSource, PlatformTransactionManager transactionManager) {
+//        JobRepositoryFactoryBean jobRepositoryFactoryBean = new JobRepositoryFactoryBean();
+//        jobRepositoryFactoryBean.setDataSource(dataSource);
+//        jobRepositoryFactoryBean.setTransactionManager(transactionManager);
+//        jobRepositoryFactoryBean.setDatabaseType("mysql");
+//        return jobRepositoryFactoryBean.getJobRepository();
+//    }
 }
